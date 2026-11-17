@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070b13">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="application-name" content="Forward Desktop">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <title>Forward — Write first. Edit later.</title>
+  <link rel="stylesheet" href="style.css?v=2.0.0">
+</head>
+<body>
+<div id="app">
+  <aside id="desktop-side" aria-label="Navigation">
+    <div class="brand"><div class="brand-mark" aria-hidden="true">❯❯</div><div><b>FORWARD</b><small>WRITING STUDIO</small></div></div>
+    <div class="side-label">WORKSPACE</div>
+    <div id="side-navigation"></div>
+    <div class="side-label" style="margin-top:30px">DEINE KAPITEL</div>
+    <div id="side-chapters"></div>
+    <div class="sidebar-bottom" id="side-bottom"></div>
+  </aside>
+  <div id="workspace">
+    <header class="top" id="top"></header>
+    <main id="main"></main>
+    <section id="editor"><div class="status" id="status"></div><div class="paper" id="paper"></div><div id="editor-actions"></div></section>
+    <nav class="footer" id="footer"></nav>
+  </div>
+  <aside id="desktop-inspector" aria-label="Kapitelinformationen"><div id="inspector"></div></aside>
+</div>
+<dialog id="dialog"><div id="dialog-body"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js?v=2.0.0" defer></script>
+</body>
+</html>
